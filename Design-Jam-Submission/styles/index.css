@@ -79,9 +79,9 @@ div .navbar a:hover{
 .buy, .aboutus {
     border:5px solid white;
     height: 50px;
-    width: 150px;
+    width: 130px;
     color:white;
-    font-size: 20px;
+    font-size: 18px;
     padding: 0px 20px;
     margin:0px 15px;
     cursor: pointer;
