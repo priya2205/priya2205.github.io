@@ -1,0 +1,280 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/index.css" class="rel">
+        <link rel="stylesheet" href="styles/ribbon.css" class="rel">
+        <link rel="stylesheet" href="styles/circularprogress.css" class="rel">
+        <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Bungee Outline" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>CoffeeLuv</title>
+        <style>
+            
+            .tab{
+                padding-top: 60px;
+            }
+            .share{
+              text-decoration: none;
+              color:brown;
+              text-align: center;padding-bottom: 20px;
+            }
+            .btn{
+              text-align: center;
+              padding-bottom: 20px;
+            }
+            .Buycoffee{
+              border:5px solid brown;
+              height: 70px;
+              width: 200px;
+              color: brown;
+              font-size: 20px;
+              margin: auto;
+              padding: 20px 20px;
+              margin:0px 15px;
+              cursor: pointer;
+              background-color: inherit;
+              right:20px;
+              font-weight: 700;
+              border-radius: 15px;
+            }
+             .Buycoffee:hover{
+              color:white;
+              background-color: brown;
+            }
+            .num{
+              font-size: 12px;
+              color:grey;
+              font-weight: 600;
+            }
+            .soldout
+            {
+              font-size: 20px;
+              padding: 10px 20px;
+              color:black;
+            }
+            
+        </style>
+    </head>
+<body>
+    <div class="header">
+
+        <div class="navbar" id="navbar">
+            
+             <!-- <ul> -->
+                 <span class="htext">CoffeLuv</span>
+                  <!-- <li class="nav-items"> -->
+                    
+                      <a href="index.html">Home</a>
+                      <a href="products.html" >Products</a>
+                      <a href="brewing.html"  >Brewing</a>
+                      <a href="wholesale.html">Wholesale</a>
+                      <a href="#contact">Contact</a>
+                     
+                  <!-- </li> -->
+                  <!-- <span><i class="fa fa-search" style="font-size: 30px;padding:0px 50px;"></i></span> -->
+                 
+                  <button onclick="myFunction()" style="font-size: 30px;color:white;border:1 px solid rgb(49, 17, 17);
+                  margin: none; background-color: inherit;cursor:pointer;" class="icon">&#9776;</button>
+
+         <!-- </ul> -->
+     </div>  
+     
+    </div>
+    <div class="tab"></div>
+    <div class="buyproducts">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                      <div class="product-img bestseller">
+                        <img src="images/peaberry.jpg" alt="" style="width: 100%;height:250px">
+                       </div>
+                        <p style="font-weight: 600; color:rgb(56, 16, 16);padding:0px 0px;text-align:center;">Peaberry Roast</p>
+                        <p class="price"><span><i class="fa fa-rupee" style="font-size: 30px;"></i></span><span>400</span><span style="font-size: 10px;color:brown"> perkg</span><span class="likes">       <i class="fa fa-heart-o" style="font-size:40px;color: red;cursor:pointer;"></i></span>
+                        </p>
+                       
+                        <p class="btn">
+                        <button onclick="window.location.href = 'buynow.html';"class="Buycoffee">Buy Now</button>
+                        </p>
+                        <p class="share"><a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-comment-o"></i></a><span class="c num"> 17 </span>
+                          <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-share-square-o"></i></a><span class="s num"> 1k </span>
+                          <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-thumbs-up"></i></a><span class="l num"> 170 </span></p>
+                        </p>
+                     </div>            
+             </div>
+             <div class="column">
+               <div class="card">
+                 <div class="product-img">
+                   <img src="images/brazil.jpg" alt="" style="width: 100%;height:250px">
+                  </div>
+                   <p style="font-weight: 600; color:rgb(56, 16, 16);padding:0px 0px;text-align:center;">Bourbon</p>
+                   <p class="price"><span><i class="fa fa-rupee" style="font-size: 30px;"></i></span><span>560</span><span style="font-size: 10px;color:brown"> perkg</span><span class="likes">       <i class="fa fa-heart-o" style="font-size:40px;color: red;cursor:pointer;"></i></span>
+                   </p>
+                   <p class="btn">
+                    <button onclick="window.location.href = 'buynow.html';" class="Buycoffee">Buy Now</button>
+                    </p>
+                    <p class="share"><a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-comment-o"></i></a><span class="c num"> 17 </span>
+                      <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-share-square-o"></i></a><span class="s num"> 1k </span>
+                      <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-thumbs-up"></i></a><span class="l num"> 170 </span></p>
+                    </p>
+                </div> 
+               </div>        
+            
+            <div class="column">
+             <div class="card">
+               <div class="product-img">
+                 <img src="images/cauvery.jpg" alt="" style="width: 100%;height:250px">
+                </div>
+                 <p style="font-weight: 600; color:rgb(56, 16, 16);padding:0px 0px;text-align:center;">Cauvery Coffee</p>
+                 <p class="price"><span><i class="fa fa-rupee" style="font-size: 30px;"></i></span><span>860</span><span style="font-size: 10px;color:brown"> perkg</span><span class="likes">       <i class="fa fa-heart-o" style="font-size:40px;color: red;cursor:pointer;"></i></span>
+                 </p>
+                 <p class="btn">
+                  <button onclick="window.location.href = 'buynow.html';" class="Buycoffee soldout">Buy Now</button>
+                  </p>
+                  <p class="share"><a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-comment-o"></i></a><span class="c num"> 17 </span>
+                    <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-share-square-o"></i></a><span class="s num"> 1k </span>
+                    <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-thumbs-up"></i></a><span class="l num"> 170 </span></p>
+                  </p>
+              </div> 
+             </div>        
+          
+          <div class="column">
+           <div class="card">
+             <div class="product-img">
+               <img src="images/jbm.jpg" alt="" style="width: 100%;height:250px">
+              </div>
+               <p style="font-weight: 600; color:rgb(56, 16, 16);padding:0px 0px;text-align:center;">Jamaican Blue Mountain</p>
+               <p class="price"><span><i class="fa fa-rupee" style="font-size: 30px;"></i></span><span>2560</span><span style="font-size: 10px;color:brown"> perkg</span><span class="likes">       <i class="fa fa-heart-o" style="font-size:40px;color: red;cursor:pointer;"></i></span>
+               </p>
+               <p class="btn">
+                <button onclick="window.location.href = 'buynow.html';" class="Buycoffee">Buy Now</button>
+                </p>
+                <p class="share"><a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-comment-o"></i></a><span class="c num"> 10 </span>
+                  <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-share-square-o"></i></a><span class="s num"> 3k </span>
+                  <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-thumbs-up"></i></a><span class="l num"> 230 </span></p>
+                </p>
+            </div> 
+           </div>        
+           <div class="column">
+            <div class="card">
+                  <div class="product-img bestseller">
+                    <img src="images/Kona coffee.webp" alt="" style="width: 100%;height:250px">
+                   </div>
+                    <p style="font-weight: 600; color:rgb(56, 16, 16);padding:0px 0px;text-align:center;">Kona Coffee</p>
+                    <p class="price"><span><i class="fa fa-rupee" style="font-size: 30px;"></i></span><span>3900</span><span style="font-size: 10px;color:brown"> perkg</span><span class="likes">       <i class="fa fa-heart-o" style="font-size:40px;color: red;cursor:pointer;"></i></span>
+                    </p>
+                   
+                    <p class="btn">
+                    <button onclick="window.location.href = 'buynow.html'; "class="Buycoffee">Buy Now</button>
+                    </p>
+                    <p class="share"><a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-comment-o"></i></a><span class="c num"> 77 </span>
+                      <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-share-square-o"></i></a><span class="s num"> 3k </span>
+                      <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-thumbs-up"></i></a><span class="l num"> 180 </span></p>
+                    </p>
+                 </div>            
+         </div>
+         <div class="column">
+           <div class="card">
+             <div class="product-img ">
+               <img src="images/arabicaroast.jpeg" alt="" style="width: 100%;height:250px">
+              </div>
+               <p style="font-weight: 600; color:rgb(56, 16, 16);padding:0px 0px;text-align:center;">Arabica Roast</p>
+               <p class="price"><span><i class="fa fa-rupee" style="font-size: 30px;"></i></span><span>960</span><span style="font-size: 10px;color:brown"> perkg</span><span class="likes">       <i class="fa fa-heart-o" style="font-size:40px;color: red;cursor:pointer;"></i></span>
+               </p>
+               <p class="btn">
+                <button onclick="window.location.href = 'buynow.html'; " class="Buycoffee soldout">Buy Now</button>
+                </p>
+                <p class="share"><a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-comment-o"></i></a><span class="c num"> 7 </span>
+                  <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-share-square-o"></i></a><span class="s num"> 100 </span>
+                  <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-thumbs-up"></i></a><span class="l num"> 100 </span></p>
+                </p>
+            </div> 
+           </div>        
+        
+        <div class="column">
+         <div class="card">
+           <div class="product-img bestseller">
+             <img src="images/nilgrifilter.jpeg" alt="" style="width: 100%;height:250px">
+            </div>
+             <p style="font-weight: 600; color:rgb(56, 16, 16);padding:0px 0px;text-align:center;">Nilgiri Filter Coffee</p>
+             <p class="price"><span><i class="fa fa-rupee" style="font-size: 30px;"></i></span><span>760</span><span style="font-size: 10px;color:brown"> perkg</span><span class="likes">       <i class="fa fa-heart-o" style="font-size:40px;color: red;cursor:pointer;"></i></span>
+             </p>
+             <p class="btn">
+              <button onclick="window.location.href = 'buynow.html'; " class="Buycoffee">Buy Now</button>
+              </p>
+              <p class="share"><a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-comment-o"></i></a><span class="c num"> 77 </span>
+                <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-share-square-o"></i></a><span class="s num"> 3k </span>
+                <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-thumbs-up"></i></a><span class="l num"> 100 </span></p>
+              </p>
+          </div> 
+         </div>        
+      
+      <div class="column">
+       <div class="card">
+         <div class="product-img">
+           <img src="images/royalrobusta.jpg" alt="" style="width: 100%;height:250px">
+          </div>
+           <p style="font-weight: 600; color:rgb(56, 16, 16);padding:0px 0px;text-align:center;">Royal Robusta</p>
+           <p class="price"><span><i class="fa fa-rupee" style="font-size: 30px;"></i></span><span>1260</span><span style="font-size: 10px;color:brown"> perkg</span><span class="likes">       <i class="fa fa-heart-o" style="font-size:40px;color: red;cursor:pointer;"></i></span>
+           </p>
+           <p class="btn">
+            <button onclick="window.location.href = 'buynow.html'; " class="Buycoffee">Buy Now</button>
+            </p>
+            <p class="share"><a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-comment-o"></i></a><span class="c num"> 87 </span>
+              <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-share-square-o"></i></a><span class="s num"> 2k </span>
+              <a href=""><i style="font-size:24px;color:brown;font-weight:600;" class="fa fa-thumbs-up"></i></a><span class="l num"> 197 </span></p>
+            </p>
+        </div> 
+       </div>        
+   
+         </div> 
+    </div>
+    <div class="tab"></div>
+    <!-- footer -->
+    <div class="footer" id="contact">
+        <div class="row">
+          <div class="column">
+            <p style="color: white;font-size:24px;font-family:'Playball';">CoffeeLuv</p>
+            <p style="color: white;font-size:12px;">Pure blend of soulful taste and refreshimg aroma.</p>
+            
+          </div>
+          <div class="column"><p style="font-weight: 600;color:white;font-size:22px">Stay Connected</p>
+            <p ><i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-instagram"></i>
+           <i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-pinterest"></i>
+           <i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-youtube-play"></i>
+           <i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-facebook-official"></i>
+         </p></div>
+          <div class="column">
+            <p><i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-envelope-o"> coffeeluvofficila@gmail.com</i>
+            </p><p style="font-weight: 400;color:white;font-size:14px">Call us on +1800 098 098 toll free</p>
+           </div>
+          <div class="column"><p style="color:white;">
+            &copy;2020 coffeeluv.com copyrights reserved 
+          </p></div>
+        </div>
+      </div>
+      <script src="scripts/navbar.js"></script>
+    <script>
+        function myFunction() {
+          
+
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+              x.className += " responsive";
+              console.log(x);
+            } else {
+              x.className = "navbar";
+            }
+          }
+
+        const sold = document.querySelectorAll(".soldout");
+        console.log(sold);
+        for (var i=0;i<sold.length;i++){
+        sold[i].disabled=true;
+        sold[i].style.opacity="0.5";
+        sold[i].style.hover="none";
+        sold[i].innerHTML="Sold Out";
+        }
+    </script>
+</body>
+</html>

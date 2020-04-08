@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css" class="rel">
+    <link rel="stylesheet" href="styles/ribbon.css" class="rel">
+    <link rel="stylesheet" href="styles/circularprogress.css" class="rel">
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Bungee Outline" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CoffeeLuv</title>
+    <style>
+        label{
+            color:rgb(65, 21, 21);
+            font-size: 24px;
+            font-weight: 400;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           
+        }
+        input[type= "email"],[type="number"],[type= "text"]{
+            height: 50px;
+            width: 50%;
+            padding:10px;
+        }
+        .wholesale{
+            margin: auto;
+            overflow: hidden;
+        }
+        .modalform{
+            padding-left: 25%;
+            position: relative;
+            padding-top: 50px;
+        }
+        .wtext{
+            font-size: 30px;
+            color:rgb(102, 3, 3);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            height: 100px;
+            padding-top: 30px;
+            width: 450px;
+            text-align: center;
+            margin: auto;
+            border-bottom: 3px solid rgb(102, 3, 3) ;
+            padding-bottom: 50px;
+            
+            
+        }
+        input[type="submit"]{
+            border:5px solid white;
+        height: 70px;
+            width: 250px;
+          color:white;
+  font-size: 20px;
+  margin: auto;
+  padding: 0px 20px;
+  margin:0px 15px;
+  cursor: pointer;
+  background-color:rgb(59, 16, 16);
+  right:20px;
+  font-weight: 700;
+  border-radius: 15px;
+        }
+        input[type="submit"]:hover{
+            color:rgb(59, 16, 16);
+            background-color:brown;
+          }
+        
+    </style>
+</head>
+<body oncopy="return false" oncut="return false" onpaste="return false">
+    <div class="container">
+        <div class="header">
+
+            <div class="navbar" id="navbar">
+                
+                 <!-- <ul> -->
+                     <span class="htext">CoffeLuv</span>
+                      <!-- <li class="nav-items"> -->
+                        
+                          <a href="index.html" class="nav">Home</a>
+                          <a href="products.html"  class="nav">Products</a>
+                          <a href="brewing.html"  class="nav">Brewing</a>
+                          <a href="wholesale.html"  class="nav">Wholesale</a>
+                          <a href="#contact"  class="nav">Contact</a>
+                         
+                      <!-- </li> -->
+                      <!-- <span><i class="fa fa-search" style="font-size: 30px;padding:0px 50px;"></i></span> -->
+                      <button onclick="window.location.href = 'products.html';" class="buy">Buy Now</button>  
+                      <button onclick="myFunction()" style="font-size: 30px;color:white;border:none;
+                      margin: none; background-color: inherit;cursor:pointer;" class="icon">&#9776;</button>
+ 
+             <!-- </ul> -->
+         </div>  
+         
+       </div>
+     
+       <!-- form for wholesale -->
+       <div class="wholesale">
+            <p class="wtext">Trade with us </p>
+            <form action="" class="modalform" autocomplete="on">
+                <label for="">Name:</label><br>
+                <input type="text" max="32" name="name" placeholder="Enter your name" required><br><br>
+                <label for="">email:</label><br>
+                <input type="email" max="32" name="email" placeholder="Enter your email" required><br><br>
+                <label for="">Phone Number:</label><br>
+                <input type="number" max="32" name="phno" placeholder="Enter your Phone number" required><br><br>
+                <label for="">Message:</label><br>
+               <textarea rows="10" cols="100"></textarea><br><br>
+               <input type="submit" value="Start Trade" name="submit">
+            </form>
+       </div>
+
+
+       <!-- footer -->
+       <div class="footer" id="contact">
+        <div class="row">
+          <div class="column">
+            <p style="color: white;font-size:24px;font-family:'Playball';">CoffeeLuv</p>
+            <p style="color: white;font-size:12px;">Pure blend of soulful taste and refreshimg aroma.</p>
+            
+          </div>
+          <div class="column"><p style="font-weight: 600;color:white;font-size:22px">Stay Connected</p>
+            <p ><i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-instagram"></i>
+           <i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-pinterest"></i>
+           <i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-youtube-play"></i>
+           <i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-facebook-official"></i>
+         </p></div>
+          <div class="column">
+            <p><i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-envelope-o"> coffeeluvofficila@gmail.com</i>
+            </p><p style="font-weight: 400;color:white;font-size:14px">Call us on +1800 098 098 toll free</p>
+           </div>
+          <div class="column"><p style="color:white;">
+            &copy;2020 coffeeluv.com copyrights reserved 
+          </p></div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/navbar.js"></script>
+    <script>
+      function myFunction() {
+        
+        var x = document.getElementById("navbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+          console.log(x);
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+</body>
+</html>

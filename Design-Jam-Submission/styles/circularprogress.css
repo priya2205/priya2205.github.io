@@ -1,0 +1,107 @@
+.circle-wrap{
+    margin :50px auto;
+    width:150px;
+    height:150px ;
+    border-radius: 50%;
+    background-color: #e6e2e7;
+ }
+ .circle-wrap .circle .mask,.circle-wrap .circle .fill{
+     width:150px;
+     height:150px ;
+     border-radius: 50%;
+     position:absolute; 
+ }
+ .circle-wrap .circle .mask{
+     clip:rect(0px ,150px,150px,75px);
+ }
+ .circle-wrap .circle .mask .fill{
+     clip:rect(0px,75px,150px,0px);
+     
+ }
+ .circle-wrap .circle .mask .brown{
+    
+    background-color: #881919;
+}
+.circle-wrap .circle .mask .blue{
+    
+    background-color: dodgerblue;
+}
+.circle-wrap .circle .mask .lime{
+    
+    background-color: lime;
+}
+.circle-wrap .circle .mask .violet{
+    
+    background-color: violet;
+}
+ .circle-wrap .circle .mask .full, .circle-wrap .circle .fill{
+     animation: fill ease-in-out 5s;
+     transform: rotate(180deg);
+ } 
+ @keyframes fill{
+     0%{
+         transform: rotate(0deg);
+     }
+     100%{
+         transform:rotate(180deg)
+     }
+    
+ }
+ .full.seventy,.seventy fill{
+     transform: rotate(72deg);
+ }
+ .seventy.full.animate,.seventy.animate .fill{
+      animation: seventy linear 5s forwards;
+ }
+ @keyframes seventy{
+     0%{
+         transform: rotate(0deg);
+     }
+     100%{
+         transform:rotate(72deg)
+     }
+ }
+ .full.ninetyfive,.ninetyfive fill{
+    transform: rotate(162deg);
+}
+.ninetyfive.full.animate,.ninetyfive.animate .fill{
+     animation: ninetyfive linear 5s forwards;
+}
+@keyframes ninetyfive{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(162deg)
+    }
+}
+.full.ninety,.ninety fill{
+    transform: rotate(144deg);
+}
+.ninety.full.animate,.ninety.animate .fill{
+     animation: ninety linear 5s forwards;
+}
+@keyframes ninety{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(144deg)
+    }
+}
+ .circle-wrap .inside-circle{
+     width: 130px;
+     height: 130px;
+     border-radius: 50%;
+     background: #fff;
+     line-height: 130px;
+     color:grey;
+     text-align: center;
+     margin-top: 10px;
+     margin-left: 10px;
+     position:absolute;
+     z-index: 100;
+     font-weight: 600;
+     font-size: 15px;
+     word-break:break-all ;
+ }

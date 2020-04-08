@@ -1,0 +1,311 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css" class="rel">
+    <link rel="stylesheet" href="styles/ribbon.css" class="rel">
+    <link rel="stylesheet" href="styles/circularprogress.css" class="rel">
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Bungee Outline" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CoffeeLuv</title>
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+
+           <div class="navbar" id="navbar">
+               
+                <!-- <ul> -->
+                    <span class="htext">CoffeLuv</span>
+                     <!-- <li class="nav-items"> -->
+                       
+                         <a href="index.html">Home</a>
+                         <a href="products.html" >Products</a>
+                         <a href="brewing.html"  >Brewing</a>
+                         <a href="wholesale.html">Wholesale</a>
+                         <a href="#contact">Contact</a>
+                        
+                     <!-- </li> -->
+                     <!-- <span><i class="fa fa-search" style="font-size: 30px;padding:0px 50px;"></i></span> -->
+                     <button onclick="window.location.href = 'products.html';" class="buy">Buy Now</button>  
+                     <button onclick="myFunction()" style="font-size: 30px;color:white;border:1 px solid rgb(49, 17, 17);
+                     margin: none; background-color: inherit;cursor:pointer;" class="icon">&#9776;</button>
+
+            <!-- </ul> -->
+        </div>  
+        
+      </div>
+      
+       <div class="image">
+        <img src="images/bgcup.jpg" alt="coffee" style="width: 100%;height:600px;">
+        <div class="img-txt">
+             <p style="font-size: 23px;font-family:cursive; padding:20px 30px;">Start your day by having one cup of <span style="font-family: 'Playball';">Coffeeluv's</span> coffee and get charged,be energetic for the whole day</p>
+          <button onclick="window.location.href = 'aboutus.html';" class="aboutus">About Us</button>
+       </div>
+     </div>
+      <!-- start of product section -->
+    <div class="products">
+        <h4 class="p1text">OUR PRODUCTS</h4>
+
+        <div class="row">
+                 <div class="column">
+                     <div class="card">
+                           <div class="product-img bestseller">
+                             <img onclick="window.location.href = 'products.html'; " src="images/peaberry.jpg" alt="" style="width: 100%;height:250px">
+                            </div>
+                             <p style="font-weight: 600; color:rgb(56, 16, 16);padding:0px 0px;text-align:center;">Peaberry Roast</p>
+                             <p class="price"><span><i class="fa fa-rupee" style="font-size: 30px;"></i></span><span>400</span><span style="font-size: 10px;color:brown"> perkg</span><span class="likes">       <i class="fa fa-heart-o" style="font-size:40px;color: red;cursor:pointer;"></i></span>
+                             </p>
+                          </div>            
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                      <div class="product-img">
+                        <img onclick="window.location.href = 'products.html'; " src="images/brazil.jpg" alt="" style="width: 100%;height:250px">
+                       </div>
+                        <p style="font-weight: 600; color:rgb(56, 16, 16);padding:0px 0px;text-align:center;">Bourbon</p>
+                        <p class="price"><span><i class="fa fa-rupee" style="font-size: 30px;"></i></span><span>560</span><span style="font-size: 10px;color:brown"> perkg</span><span class="likes">       <i class="fa fa-heart-o" style="font-size:40px;color: red;cursor:pointer;"></i></span>
+                        </p>
+                     </div> 
+                    </div>        
+                 
+                 <div class="column">
+                  <div class="card">
+                    <div  class="product-img">
+                      <img onclick="window.location.href = 'products.html'; " src="images/cauvery.jpg" alt="" style="width: 100%;height:250px">
+                     </div>
+                      <p style="font-weight: 600; color:rgb(56, 16, 16);padding:0px 0px;text-align:center;">Cauvery Coffee</p>
+                      <p class="price"><span><i class="fa fa-rupee" style="font-size: 30px;"></i></span><span>860</span><span style="font-size: 10px;color:brown"> perkg</span><span class="likes">       <i class="fa fa-heart-o" style="font-size:40px;color: red;cursor:pointer;"></i></span>
+                      </p>
+                   </div> 
+                  </div>        
+               
+               <div class="column">
+                <div class="card">
+                  <div class="product-img">
+                    <img onclick="window.location.href = 'products.html'; " src="images/jbm.jpg" alt="" style="width: 100%;height:250px">
+                   </div>
+                    <p style="font-weight: 600; color:rgb(56, 16, 16);padding:0px 0px;text-align:center;">Jamaican Blue Mountain</p>
+                    <p class="price"><span><i class="fa fa-rupee" style="font-size: 30px;"></i></span><span>2560</span><span style="font-size: 10px;color:brown"> perkg</span><span class="likes">       <i class="fa fa-heart-o" style="font-size:40px;color: red;cursor:pointer;"></i></span>
+                    </p>
+                 </div> 
+                </div>        
+            
+              </div>
+               
+       
+    </div>
+    
+
+    <!-- end of product section -->
+    <div class="linespace"></div>
+        <div class="coffee">
+          <p class="carousel">Our Coffeeluv's coffee is 
+            <span 
+               class="rotate-text"
+               data-period="2000"
+               data-rotate='["Mellow","Winey","Tangy"]'>
+            </span>
+              in taste.</p>
+              <p class="stxt">We believe that coffee is more than just a drink: It’s a culture, an economy, an art, a science — and a passion.Our coffee's aroma is best and it is chocaletly,fruity,nutty,herby,turpeny,smoky,ashy.</p>
+             <p style="text-align: center;"><button onclick="window.location.href = 'products.html'; " class="shop">SHOPPING</button></p>
+            </div>
+            
+        <div class="progress">
+          <div class="row">
+            <div class="column">
+              <div class="circle-wrap">
+                <div class="circle">
+                    <div class="mask full ninetyfive">
+                        <div class="fill blue"></div>
+                    </div>
+                    <div class="mask half ninetyfive">
+                        <div class="fill blue"></div>
+                    </div>
+                    <!-- <div class="mask full">
+                        <div class="fill"></div>
+                    </div> -->
+                    <div class="inside-circle">Satisfaction</div>
+                </div>
+            </div>
+            </div>
+          
+         
+            <div class="column">
+              <div class="circle-wrap">
+                <div class="circle">
+                    <div class="mask full ninety">
+                        <div class="fill lime"></div>
+                    </div>
+                    <div class="mask half ninety">
+                        <div class="fill lime"></div>
+                    </div>
+                    <!-- <div class="mask full">
+                        <div class="fill"></div>
+                    </div> -->
+                    <div class="inside-circle">Ontime Delivery</div>
+                </div>
+            </div>
+            </div>
+          
+            <div class="column">
+              <div class="circle-wrap">
+                <div class="circle">
+                    <div class="mask full seventy">
+                        <div class="fill violet"></div>
+                    </div>
+                    <div class="mask half seventy">
+                        <div class="fill violet"></div>
+                    </div>
+                    <!-- <div class="mask full">
+                        <div class="fill"></div>
+                    </div> -->
+                    <div class="inside-circle">10+ varietes</div>
+                </div>
+            </div>
+            </div>
+
+            <div class="column">
+              <div class="circle-wrap">
+                <div class="circle">
+                    <div class="mask full ninety">
+                        <div class="fill brown"></div>
+                    </div>
+                    <div class="mask half ninety">
+                        <div class="fill brown"></div>
+                    </div>
+                    <!-- <div class="mask full">
+                        <div class="fill"></div>
+                    </div> -->
+                    <div class="inside-circle">Freshnes of Beans</div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+       <div class="about">
+         <img src="images/about.jpg" alt=""  style="width: 73%;float:right;position:relative;"src">
+         <img src="images/about.jpg" alt=""  style="width: 73%;height:100%;float:right;position:relative;"src">
+         <img src="images/about.jpg" alt=""  style="width: 73%; height:100%;float:right;position:relative;"src">
+            <p class="atext">CoffeLuv was challenged to help preserve the surplus coffee beans in Various countries.And Coffeeluv accepted the challenge.Our coffee specialist Franklin, was on a mission to create a delicious cup of instant coffee . 
+              Franklin and his team worked hard to find a new way to preserve coffee bean that would retain the coffee’s natural flavour, so that everyone can enjoy their coffee. So, they found the answer, and Coffeluv was born. 
+            </p>
+       </div>
+       <div class="space"></div>
+       <div class="viewmore">
+         <buttom onclick="window.location.href = 'aboutus.html';" class="view"> View More</button>
+       </div>
+
+
+        <div class="flexbox">
+          <div class="labels">Pinterst</div>
+          <div class="labels">Instagram</div>
+          <div class="labels">Facebook</div>
+          <div class="labels">Youtube</div>
+          <div class="labels">amazon</div>
+          <div class="labels">bigbasket</div>
+       </div>
+
+       <div class="footer" id ="contact">
+         <div class="row">
+           <div class="column">
+             <p style="color: white;font-size:24px;font-family:'Playball';">CoffeeLuv</p>
+             <p style="color: white;font-size:12px;">Pure blend of soulful taste and refreshimg aroma.</p>
+             
+           </div>
+           <div class="column"><p style="font-weight: 600;color:white;font-size:22px">Stay Connected</p>
+             <p ><i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-instagram"></i>
+            <i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-pinterest"></i>
+            <i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-youtube-play"></i>
+            <i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-facebook-official"></i>
+          </p></div>
+           <div class="column">
+             <p><i style="color:beige;font-size:14px;padding:13px 10px;cursor:pointer;" class="fa fa-envelope-o"> coffeeluvofficila@gmail.com</i>
+             </p><p style="font-weight: 400;color:white;font-size:14px">Call us on +1800 098 098 toll free</p>
+            </div>
+           <div class="column"><p style="color:white;">
+             &copy;2020 coffeeluv.com copyrights reserved 
+           </p></div>
+         </div>
+       </div>
+    </div>
+    <script src="scripts/navbar.js"></script> 
+    <script>
+         
+        function myFunction() {
+          
+
+          var x = document.getElementById("navbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+            console.log(x);
+          } else {
+            x.className = "navbar";
+          }
+        }
+
+        //for text animation
+        var TxtRotate = function(el, toRotate, period) {
+          this.toRotate = toRotate;
+          this.el = el;
+          this.loopNum = 0;
+          this.period = parseInt(period, 10) || 2000;
+          this.txt = '';
+          this.tick();
+          this.isDeleting = false;
+        };
+        
+        TxtRotate.prototype.tick = function() {
+          var i = this.loopNum % this.toRotate.length;
+          var fullTxt = this.toRotate[i];
+          console.log(fullTxt)
+          if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+          } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+          }
+        
+          this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+        
+          var that = this;
+          var delta = 300 - Math.random() * 100;
+        
+          if (this.isDeleting) { delta /= 2; }
+        
+          if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+          } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+          }
+        
+          setTimeout(function() {
+            that.tick();
+          }, delta);
+        };
+        
+        window.onload = function() {
+          var elements = document.getElementsByClassName('rotate-text');
+          
+          console.log(elements, parseInt(1000, 10));
+          for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-rotate');
+            console.log(toRotate,elements.length);
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+             new TxtRotate(elements[i], JSON.parse(toRotate), period);
+            }
+          }
+          // INJECT CSS
+          var css = document.createElement("style");
+          css.type = "text/css";
+          css.innerHTML = ".rotate-text > .wrap { border-right: 0.08em solid white }";
+          document.body.appendChild(css);
+        };
+        </script>
+</body>
+</html>

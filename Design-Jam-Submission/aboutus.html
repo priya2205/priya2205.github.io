@@ -1,0 +1,127 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/index.css" class="rel">
+        <link rel="stylesheet" href="styles/ribbon.css" class="rel">
+        <link rel="stylesheet" href="styles/circularprogress.css" class="rel">
+        <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Bungee Outline" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>CoffeeLuv</title>
+    </head><style>
+        .bottomdiv{
+            position: relative;
+            left: 75%;
+            bottom:50px;
+        }
+        .pcolumn{
+            display: block;
+            width: 50%;
+            padding: 0 16px;
+          }
+          .prow{
+            margin:0 15px;
+          }
+          .prow:after{
+            content:"";
+            display:table;
+            clear:both;
+          }
+          .sspace{
+              padding-top: 60px;
+          }
+          .btext{
+              padding: 20px 20px;
+              font-size: 19px;
+              color: brown;
+              font-weight: 600;
+              letter-spacing: 0.05em;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+          }
+    </style>
+<body>
+    <div class="header">
+
+        <div class="navbar" id="navbar">
+            
+             <!-- <ul> -->
+                 <span class="htext">CoffeLuv</span>
+                  <!-- <li class="nav-items"> -->
+                    
+                      <a href="index.html">Home</a>
+                      <a href="products.html" >Products</a>
+                      <a href="brewing.html"  >Brewing</a>
+                      <a href="wholesale.html">Wholesale</a>
+                      <a href="#contact">Contact</a>
+                     
+                  <!-- </li> -->
+                  <!-- <span><i class="fa fa-search" style="font-size: 30px;padding:0px 50px;"></i></span> -->
+                  <button onclick="window.location.href = 'products.html';" class="buy">Buy Now</button>  
+                  <button onclick="myFunction()" style="font-size: 30px;color:white;border:1 px solid rgb(49, 17, 17);
+                  margin: none; background-color: inherit;cursor:pointer;" class="icon">&#9776;</button>
+
+         <!-- </ul> -->
+     </div>  
+     
+   </div>
+    <div class="sspace"></div>
+   <div class="prow">
+    <div class="pcolumn">
+        <div class="card">
+              <div class="product-img">
+                <img  " src="images/peaberry.jpg" alt="" style="width: 100%;height:250px">
+               </div>
+            </div>        
+               <div class="card bottomdiv">
+                <p style="color:rgb(73, 19, 19);font-size:24px;text-align:center;font-family:'Playball';">CoffeeLuv</p>
+                <p class="btext">We are pioneers in South Indian coffee industries.Our innovations in bringing about the taste and aroma in south indian coffee is supported by our millons of satisfied customers,not only in south india but also around the world.we sustain our leadership for 50 years </p>  
+            </div>
+                       
+     </div>
+    
+     
+
+ </div>
+  
+   <div class="sspace"></div>
+   <div class="footer" id="contact">
+    <div class="row">
+      <div class="column">
+        <p style="color: white;font-size:24px;font-family:'Playball';">CoffeeLuv</p>
+        <p style="color: white;font-size:12px;">Pure blend of soulful taste and refreshimg aroma.</p>
+        
+      </div>
+      <div class="column"><p style="font-weight: 600;color:white;font-size:22px">Stay Connected</p>
+        <p ><i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-instagram"></i>
+       <i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-pinterest"></i>
+       <i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-youtube-play"></i>
+       <i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-facebook-official"></i>
+     </p></div>
+      <div class="column">
+        <p><i style="color:beige;font-size:18px;padding:10px 10px;cursor:pointer;" class="fa fa-envelope-o"> coffeeluvofficila@gmail.com</i>
+        </p><p style="font-weight: 400;color:white;font-size:14px">Call us on +1800 098 098 toll free</p>
+       </div>
+      <div class="column"><p style="color:white;">
+        &copy;2020 coffeeluv.com copyrights reserved 
+      </p></div>
+    </div>
+  </div>
+  <script src="scripts/navbar.js"></script> 
+    <script>
+         
+        function myFunction() {
+          
+
+          var x = document.getElementById("navbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+            console.log(x);
+          } else {
+            x.className = "navbar";
+          }
+        }
+    </script>
+</body>
+</html>
